@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oswald:wght@400;500&display=swap');
+
+/* Main page */
+
+body {
+    background: black;
+    height: 100%;
+    margin: 0;
+}
+
+header {
+  margin: 0 0 0 0.5%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: inline-flex;
+  font-family: 'Kaushan Script', cursive;
+  color: white;
+  font-size: 30px;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+}
+
+.header-item {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+}
+
+.auth {
+  display: flex;
+  gap: 30px;
+  margin-right: 2%;
+}
+
+.genre-modal {
+  display: table;
+  text-align: center;
+  height: fit-content;
+  width: min(50%, 400px);
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 15%;
+  margin: auto;
+  border-radius: 2.5vh;
+}
+
+.container-genre {
+  margin: 20px;
+}
+
+.genre-choice {
+  display: inline;
+  margin-right: 15px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 30px;
+  height: 30px;
+  padding: 0 15px 0 15px;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.selected {
+  background: black !important;
+  color: white !important;
+}
+
+#continue {
+  margin-top: 70px;
+  background: white;
+  border: 3px solid black;
+  width: 190px;
+  height: 70px;
+  border-radius: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5.5vw;
+    font-weight: 400;
+    margin: 0;
+}
+
+@supports(-webkit-text-stroke: 1px white){
+  h1{
+      color: transparent;
+    -webkit-text-stroke: 2px white;
+      text-shadow: none;
+  }
+}
+
+footer {
+    font-family: 'Oswald', sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+
+footer > p {
+    line-height: 20px;
+    margin-right: 20px;
+}
+
+.violet {
+    color: #7D81F3;
+}
+
+.button-main {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    border: none;
+    background: white;
+    height: 3.5vw;
+    width:9vw;
+    border-radius: 3.8vw;
+    font-size: 1.3vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.background {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* Movie page */
+
+
+
+
+.arrow {
+  margin-top: 15%;
+  fill: white;
+  transform: scale(2);
+}
+
+.arrow-left {
+  margin-top: 15%;
+  fill: white;
+  transform: scale(2) scale(-1,1);
+}
+
+
+.stack {
+  display: grid;
+  color: white;
+  height: fit-content;
+}
+
+.movie {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 0 20px 0 20px;
+  margin: auto;
+}
+
+.movies {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container {
+  margin-top: 3vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.match-movie {
+  border-radius: 8px;
+  height: 16.5vh;
+  width: auto;
+  margin-top: 5%;
+}
+
+.movie-poster {
+  border-radius: 27px;
+  height: 70vh;
+  width: 46.666vh;
+  user-select: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+.matches {
+  display: flex;
+  flex-flow: row;
+  min-height: 17vh;
+  margin-top: 2vh;
+  gap: 1rem;
+  background-color: #121212;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.drag {
+  position: absolute;
+  width: 100%;
+  height: 100%
+}
+
+.container-main {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 10%;
+} 
+
+
+/* Register */
+
+.login-menu {
+  color: white;
+  display: flex;
+  margin: auto;
+  background-color: #121212;
+  width: 1000px;
+  height: 650px;
+  border-radius: 18px;
+  gap: 70px;
+}
+
+.login {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.register {
+  background-color: #0C0C0C;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 450px;
+}
+
+.login-header {
+  font-family: 'Oswald', sans-serif;
+  margin-left: 15px;
+  font-size: 35px;
+  line-height: 0px;
+  margin-left: 20px;
+}
+
+.login-form {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+input {
+  display: block;
+  border: 5px #212121 solid;
+  background: none;
+  width: 320px;
+  height: 50px;
+  color: white;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#nevermind {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.login-button {
+  border: none;
+  background-color: #212121;
+  color: white;
+  font-size: 25px;
+  width: 340px;
+  height: 75px;
+  cursor: pointer;
+}
+
+.continue {
+  margin: auto 0 30px 5%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap; 
+  margin-top: 2%;
+  margin-left: 1%;
+}
+
+.profile > p {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  margin: 10px 0 0 0;
+}
+
+.line-break {
+  width: 100%;
+}
+
+.profile-matches {
+  display: flex;
+  direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-match {
+  height: 30vh;
+  width: auto;
+}
+
+.profile-match > a > img {
+  height: 30vh;
+  border-radius: 10px;
+}
